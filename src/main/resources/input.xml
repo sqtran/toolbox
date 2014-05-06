@@ -1,0 +1,74 @@
+<LabTests>
+    <LabTest type="specialty" name="Anti-FXa activity" id="antiFXa" order="16">
+        <values unit="U/mL" default="N/A">
+            <value type="increased" val="0">
+                <conditions>
+                    <condition>Heparin effect</condition>
+                </conditions>
+            </value>
+            <value type="normal" val="">
+                <conditions></conditions>
+            </value>
+            <value type="decreased" val="">
+                <conditions></conditions>
+            </value>
+        </values>
+    </LabTest>
+    <LabTest type="general" name="aPTT" id="aPTT" order="">
+        <values unit="secs" default="N/A">
+            <value type="increased" val="">
+                <conditions>
+                    <condition>Acquired hemophilia</condition>
+                    <condition>Acquired vWD</condition>
+                    <condition>DIC</condition>
+                    <condition>Dysfibrinogenemia</condition>
+                    <condition>FI deficiency</condition>
+                    <condition>FII deficiency</condition>
+                    <condition>FII/IIa inhibitors</condition>
+                    <condition>FIX deficiency</condition>
+                    <condition>FIX inhibitors</condition>
+                    <condition>FV deficiency</condition>
+                    <condition>FV inhibitors</condition>
+                    <condition>FVIII deficiency</condition>
+                    <condition>FX deficiency</condition>
+                    <condition>FX inhibitors</condition>
+                    <condition>FXI deficiency</condition>
+                    <condition>FXI inhibitors</condition>
+                    <condition>FXII deficiency</condition>
+                    <condition>FXII inhibitors</condition>
+                    <condition>Heparin effect</condition>
+                    <condition>Liver disease effect</condition>
+                    <condition>Lupus anticoagulant</condition>
+                    <condition>Monoclonal gammopathy</condition>
+                    <condition>Vitamin K deficiency</condition>
+                    <condition>vWD type 1</condition>
+                    <condition>vWD type 2</condition>
+                    <condition>vWD type 3</condition>
+                    <condition>Warfarin effect</condition>
+                </conditions>
+            </value>
+            <value type="normal" val="">
+                <conditions>
+                    <condition>DIC</condition>
+                    <condition>Dysfibrinogenemia</condition>
+                    <condition>FVII deficiency</condition>
+                    <condition>FXIII deficiency</condition>
+                    <condition>FVII inhibitors</condition>
+                    <condition>Liver disease effect</condition>
+                    <condition>Lupus anticoagulant</condition>
+                    <condition>Monoclonal gammopathy</condition>
+                    <condition>Vitamin K deficiency</condition>
+                    <condition>vWD type 1</condition>
+                    <condition>vWD type 2</condition>
+                    <condition>vWD type 3</condition>
+                    <condition>Warfarin effect</condition>
+                </conditions>
+            </value>
+            <value type="decreased" val="">
+                <conditions>
+                    <condition>DIC</condition>
+                </conditions>
+            </value>
+        </values>
+    </LabTest>
+</LabTests>
