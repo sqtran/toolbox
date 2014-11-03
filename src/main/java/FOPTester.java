@@ -1,7 +1,7 @@
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
@@ -15,20 +15,22 @@ import org.apache.fop.apps.FopFactory;
 import org.apache.fop.apps.MimeConstants;
 
 
-public class XMLTester {
+public class FOPTester {
 
     public static void main(String[] args) throws Exception {
         
-        FileInputStream fis = new FileInputStream(new File("/home/stran/Desktop/testData.xml"));
-        FileOutputStream fos = new FileOutputStream(new File("/home/stran/Desktop/output.pdf"));
+        InputStream in = FOPTester.class.getClassLoader().getResourceAsStream("testData.xml");
+        FileOutputStream fos = new FileOutputStream(new File("target/output.pdf"));
         
         FopFactory fopFactory = FopFactory.newInstance(); 
         Fop fop = fopFactory.newFop(MimeConstants.MIME_PDF, fos);
         TransformerFactory factory = TransformerFactory.newInstance();
         Transformer transformer = factory.newTransformer(); // identity transformer
-        Source src = new StreamSource(fis);
+        Source src = new StreamSource(in);
         Result res = new SAXResult(fop.getDefaultHandler());
         transformer.transform(src, res);
-
+        
+        
+        
     }
 }
