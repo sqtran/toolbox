@@ -36,6 +36,12 @@
             <version>0.93</version>
         </dependency>
         
+        <dependency>
+            <groupId>org.jasypt</groupId>
+            <artifactId>jasypt</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+        
     </dependencies>
 
 </project>
