@@ -1,4 +1,4 @@
-package src.javamath;
+package math;
 
 public class DivisionTest {
 
