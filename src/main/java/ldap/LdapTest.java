@@ -1,8 +1,5 @@
 package ldap;
 
-
-package com.att.tai;
-
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
